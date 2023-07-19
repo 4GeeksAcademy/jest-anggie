@@ -15,17 +15,17 @@ const fromEuroToDollar = function(valueInEuro){
     // convertimos el valor a dolares
     let valueInDollar = valueInEuro * 1.2;
     // retornamos el valor
-    return valueInDollar;
+    return parseFloat(valueInDollar.toFixed(2));
 }
 
 const fromDollarToYen = function(valueInDollar) {
     let valueInYen = valueInDollar * 127.9;
-    return valueInYen;
+    return parseFloat(valueInYen.toFixed(2));
 }
 
 const fromYenToPound =  function(valueInYen) {
     let valueInPounds = valueInYen * 0.8;
-    return valueInPounds;
+    return parseFloat(valueInPounds.toFixed(2));
 }
 
 module.exports = { sum, fromEuroToDollar, fromDollarToYen, fromYenToPound };
